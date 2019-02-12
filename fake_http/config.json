@@ -11,7 +11,7 @@
       "clients": [{
         "id": "3879c1fa-88ab-4862-a77d-559331aff92b",
         "level": 1,
-        "alterId": 64
+        "alterId": 10
       }]
     },
     "streamSettings": {
@@ -37,8 +37,7 @@
               ],
               "Connection": [
                 "keep-alive"
-              ],
-              "Pragma": "no-cache"
+              ]
             }
           },
           "response": {
@@ -49,13 +48,9 @@
               "Content-Type": [
                 "text/html"
               ],
-              "Transfer-Encoding": [
-                "chunked"
-              ],
               "Connection": [
                 "keep-alive"
-              ],
-              "Pragma": "no-cache"
+              ]
             }
           }
         }
