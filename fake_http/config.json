@@ -47,7 +47,7 @@
             "reason": "OK",
             "headers": {
               "Content-Type": [
-                " text/html"
+                "text/html"
               ],
               "Transfer-Encoding": [
                 "chunked"
