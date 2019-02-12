@@ -27,7 +27,7 @@
             ],
             "headers": {
               "Host": [
-                "mp.weixin.qq.com"
+                "szextshort.weixin.qq.com"
               ],
               "User-Agent": [
                 "Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16A366 MicroMessenger/7.0.3(0x17000321) NetType/4G Language/zh_CN"
