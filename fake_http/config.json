@@ -27,10 +27,10 @@
             ],
             "headers": {
               "Host": [
-                "m.xinhuanet.com"
+                "mp.weixin.qq.com"
               ],
               "User-Agent": [
-                "Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 MQQBrowser/8.8.2 Mobile/16A5345f Safari/604.1 MttCustomUA/2 QBWebViewType/1 WKType/1"
+                "Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16A366 MicroMessenger/7.0.3(0x17000321) NetType/4G Language/zh_CN"
               ],
               "Accept-Encoding": [
                 "gzip, deflate"
@@ -47,8 +47,7 @@
             "reason": "OK",
             "headers": {
               "Content-Type": [
-                "application/octet-stream",
-                "video/mpeg"
+                " text/html"
               ],
               "Transfer-Encoding": [
                 "chunked"
