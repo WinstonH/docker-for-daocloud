@@ -4,76 +4,67 @@
     "error": "/var/log/v2ray/error.log",
     "loglevel": "warning"
   },
-  "inbound": {
-    "port": 80,
-    "protocol": "vmess",
-    "settings": {
-      "clients": [{
-        "id": "3879c1fa-88ab-4862-a77d-559331aff92b",
-        "level": 1,
-        "alterId": 10
-      }]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "tcpSettings": {
-        "header": {
-          "type": "http",
-          "request": {
-            "version": "1.1",
-            "method": "GET",
-            "path": [
-              "/"
-            ],
-            "headers": {
-              "Host": [
-                "szextshort.weixin.qq.com"
-              ],
-              "User-Agent": [
-                "Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16A366 MicroMessenger/7.0.3(0x17000321) NetType/4G Language/zh_CN"
-              ],
-              "Accept-Encoding": [
-                "gzip, deflate"
-              ],
-              "Connection": [
-                "keep-alive"
-              ]
-            }
-          },
-          "response": {
-            "version": "1.1",
-            "status": "200",
-            "reason": "OK",
-            "headers": {
-              "Content-Type": [
-                "text/html"
-              ],
-              "Connection": [
-                "keep-alive"
-              ]
+  "inbounds": [
+    {
+      "port": 80,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [{
+          "id": "3879c1fa-88ab-4862-a77d-559331aff92b",
+          "level": 1,
+          "alterId": 10
+        }]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "http",
+            "request": {
+              "version": "1.1",
+              "method": "GET",
+              "path": ["/"],
+              "headers": {
+                "Host": ["szextshort.weixin.qq.com"],
+                "User-Agent": [
+                  "Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16A366 MicroMessenger/7.0.3(0x17000321) NetType/4G Language/zh_CN"
+                ],
+                "Accept-Encoding": ["gzip, deflate"],
+                "Connection": ["keep-alive"]
+              }
+            },
+            "response": {
+              "version": "1.1",
+              "status": "200",
+              "reason": "OK",
+              "headers": {
+                "Content-Type": ["text/html"],
+                "Connection": ["keep-alive"]
+              }
             }
           }
         }
       }
     }
-  },
-  "outbound": {
-    "protocol": "freedom",
-    "settings": {}
-  },
-  "outboundDetour": [{
-    "protocol": "blackhole",
-    "settings": {},
-    "tag": "blocked"
-  }],
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    },
+    {
+      "protocol": "blackhole",
+      "settings": {},
+      "tag": "blocked"
+    }
+  ],
   "routing": {
-    "strategy": "rules",
-    "settings": {
-      "rules": [{
+    "rules": [
+      {
         "type": "field",
         "ip": ["geoip:private"],
         "outboundTag": "blocked"
-      }]
-    }
+      }
+    ]
   }
 }
