@@ -27,7 +27,7 @@
               "headers": {
                 "Host": ["szextshort.weixin.qq.com"],
                 "User-Agent": [
-                  "Mozilla/5.0 (iPhone; CPU iPhone OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.10(0x17000a21) NetType/4G Language/zh_CN"
+                  "Mozilla/5.0 (iPhone; CPU iPhone OS 13_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.12(0x17000c2d) NetType/4G Language/zh_CN"
                 ],
                 "Accept-Encoding": ["gzip, deflate"],
                 "Connection": ["keep-alive"]
